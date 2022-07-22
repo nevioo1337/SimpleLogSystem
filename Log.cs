@@ -20,7 +20,7 @@ namespace SimpleLogSystem
                     Directory.CreateDirectory(path);
                 }
 
-                File.AppendAllText(@"logs\" + dt.ToString("yyyy_MM_dd") + ".log", Content + "\n");
+                File.AppendAllText(path + dt.ToString("yyyy_MM_dd") + ".log", Content + "\n");
             }
         }
 
